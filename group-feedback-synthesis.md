@@ -8,11 +8,11 @@
 
 | Nội dung quan sát | Phiên 1 (Tester 1)<br>*Facilitator: Lại Bá Quân (Lead Opt A)* | Phiên 2 (Tester 2)<br>*Facilitator: Đỗ Lê Việt Anh (Lead Opt B)* | Phiên 3 (Tester 3)<br>*Facilitator: Nguyễn Thị Minh Khánh (Lead Opt C)* | Phiên 4 (Tester 4)<br>*Facilitator: Nguyễn Quang Huy (Lead Opt D)* | Pattern chung hoặc Sự khác biệt nổi bật |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **First Action** *(Hành động đầu tiên họ làm: đọc bài, bấm nút trợ giúp, hay làm câu hỏi nhanh)* | | | | | |
-| **Breakdown chính (Điểm nghẽn)** *(Chỗ dừng lại lâu, bấm nhầm, ngập ngừng)* | | | | | |
-| **Cách lấy lại control** *(Nút Làm lại, Đóng ×, Bỏ qua, Tắt tự nhắc, Không đúng chỗ)* | | | | | |
-| **Option được chọn** | *[A / B / C / D]* | *[A / B / C / D]* | *[A / B / C / D]* | *[A / B / C / D]* | |
-| **Trade-off cốt lõi** *(Họ thích điểm gì và chấp nhận đánh đổi điều gì?)* | | | | | |
+| **First Action** *(Hành động đầu tiên họ làm: đọc bài, bấm nút trợ giúp, hay làm câu hỏi nhanh)* | | Làm câu hỏi nhanh (Quiz) trước; nếu làm sai quiz thì mới chọn phần mình chưa hiểu để yêu cầu AI giải thích lại | | | |
+| **Breakdown chính (Điểm nghẽn)** *(Chỗ dừng lại lâu, bấm nhầm, ngập ngừng)* | | Khi đã chọn 1 đoạn/khái niệm và được AI giải thích xong, hệ thống không cho chọn tiếp các phần còn lại để giải thích (kể cả người học có hiểu hay không) | | | |
+| **Cách lấy lại control** *(Nút Làm lại, Đóng ×, Bỏ qua, Tắt tự nhắc, Không đúng chỗ)* | | Bấm nút *"Không đúng chỗ"* | | | |
+| **Option được chọn** | *[A / B / C / D]* | **Option C** (Được nhận xét là dùng trực quan nhất trong 4 phương án của nhóm) | *[A / B / C / D]* | *[A / B / C / D]* | |
+| **Trade-off cốt lõi** *(Họ thích điểm gì và chấp nhận đánh đổi điều gì?)* | | Thích nhất điểm là chọn được đúng chỗ mình chưa hiểu để AI giải thích; không có đánh đổi gì cả | | | |
 
 ---
 
