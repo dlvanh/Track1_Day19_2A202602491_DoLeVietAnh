@@ -1,8 +1,18 @@
 # THREE-OPTION DESIGN SHEET (BẢN CHUẨN THEO PROTOTYPE THỰC TẾ)
+## DỰ ÁN VLEARN AI TUTOR: DIAGNOSTIC REFRESHER
 
-> **Nhóm:** Tung Tung Tung Sahur  
-> **Thành viên:** Lại Bá Quân (2A202602495), Đỗ Lê Việt Anh (2A202602491), Nguyễn Thị Minh Khánh (2A202602546), Nguyễn Quang Huy (2A202602421)  
-> **Case Study:** AI Tutor: Diagnostic Refresher (Hỗ trợ người học vượt qua điểm nghẽn kiến thức trên nền tảng VLearn)
+> **Khóa học:** AI20K Bootcamp — Cohort 4  
+> **Học phần:** Track 1: AI Product Labs (Day 19: Prototyping & User Testing)  
+> **Học viên thực hiện:** **Đỗ Lê Việt Anh** (MSSV: **2A202602491**) — Phụ trách chính: **Option B** (Chẩn đoán 3 câu)  
+> **Nhóm thực hiện:** **Tung Tung Tung Sahur**  
+> **Thành viên nhóm:**  
+> - **Lại Bá Quân** (2A202602495) — Lead Option A: *Chỉ vào chỗ kẹt (Inline Term/Block Inspector)*  
+> - **Đỗ Lê Việt Anh** (2A202602491) — Lead Option B: *Chẩn đoán 3 câu (3-Question Diagnostic Micro-Quiz)*  
+> - **Nguyễn Thị Minh Khánh** (2A202602546) — Lead Option C: *AI gợi ý chủ động (Proactive Context Nudge Card)*  
+> - **Nguyễn Quang Huy** (2A202602421) — Lead Option D: *Hỏi người thật (Human Escalation & Auto Context Docket)*  
+> **Case Study:** Hỗ trợ người học vượt qua điểm nghẽn kiến thức trên nền tảng VLearn  
+> **Nguyên mẫu tương tác hoàn chỉnh:** [`prototype/index.html`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype/index.html)  
+> **Hồ sơ liên quan:** [`prototype-link.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype-link.md) | [`prototype-feedback-note.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype-feedback-note.md) | [`group-feedback-synthesis.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/group-feedback-synthesis.md)
 
 ---
 
@@ -22,21 +32,21 @@
 - **Evidence ban đầu hỗ trợ giả thuyết:**  
   - 100% người học được phỏng vấn (4/4) đều sử dụng ChatGPT bên ngoài như một phương án chữa cháy bắt buộc khi không hiểu bài.
   - Hậu quả thực tế được ghi nhận: Mất 30–60 phút tự mày mò (Note 1); không kịp nộp bài trong ca lab 4 tiếng (Note 3); chịu áp lực học cả ngày, prompt chưa chuẩn nên AI trả lời lan man (Note 4); và sẵn sàng bỏ công cụ nếu bắt chờ quá 3 phút (Note 2).
-- **Điều quan trọng vẫn chưa được chứng minh:**  
+- **Điều quan trọng vẫn chưa được chứng minh trước khi làm prototype:**  
   - Liệu việc đưa sự trợ giúp trực tiếp ngay tại ngữ cảnh bài học (In-context) có thực sự giúp người học hiểu bản chất và làm lab nhanh hơn, hay họ vẫn giữ phản xạ copy/paste sang ChatGPT ngoài?
 
 ---
 
 ## PHẦN 2: CHỌN CÁC SOLUTION OPTIONS (CHẶNG 2)
-*(Được hiện thực hóa trọn vẹn trong `prototype/index.html`)*
+*(Được hiện thực hóa trọn vẹn trong [`prototype/index.html`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype/index.html))*
 
 ### 1. Phân công phụ trách 4 Options trong nhóm (4 người – mỗi người 1 Option)
-| Option | Tên phương án & Cơ chế Human–AI | Thành viên phụ trách chính (Owner) | Nhiệm vụ chính |
+| Option | Tên phương án & Cơ chế Human–AI | Thành viên phụ trách chính (Owner) | Nhiệm vụ chính & Liên kết kịch bản |
 | :---: | :--- | :--- | :--- |
-| **A** | **Chỉ vào chỗ kẹt** *(Inline Term/Block Inspector - Don't Act)* | **Lại Bá Quân** (2A202602495) | Thiết kế tương tác chạm khối văn bản/code, Pickbar 3 chế độ trợ giúp, thẻ `icard` in-line và trích dẫn slide. |
-| **B** | **Chẩn đoán 3 câu** *(3-Question Diagnostic Micro-Quiz - Ask)* | **Đỗ Lê Việt Anh** (2A202602491) | Thiết kế bộ 3 câu hỏi trắc nghiệm 1 chạm, logic chẩn đoán lỗ hổng tri thức, thẻ `dcard`, đồ thị SVG minh hoạ và nút ghi đè. |
-| **C** | **AI gợi ý chủ động** *(Proactive Context Nudge Card - Act)* | **Nguyễn Thị Minh Khánh** (2A202602546) | Thiết kế bộ đếm thời gian 12s/bắt lỗi Checkpoint, thẻ `icard.nudge`, chip tín hiệu hành vi, mục giải trình *"Vì sao AI nghĩ vậy"* và nút tắt tự nhắc. |
-| **D** | **Hỏi người thật** *(Human Escalation & Auto Context Docket - Suggest)* | **Nguyễn Quang Huy** (2A202602421) | Thiết kế modal gom bối cảnh tự động, cơ chế chọn người nhận (TA Hà / Tuấn nhóm Lab), bảo vệ quyền riêng tư và panel theo dõi tiến trình phản hồi. |
+| **A** | **Chỉ vào chỗ kẹt** *(Inline Term/Block Inspector - Don't Act)* | **Lại Bá Quân** (2A202602495) | Thiết kế tương tác chạm khối văn bản/code, Pickbar 3 chế độ trợ giúp, thẻ `icard` in-line và trích dẫn slide.<br>➔ Trải nghiệm: [`prototype/index.html#context/theory/A`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype/index.html#context/theory/A) |
+| **B** | **Chẩn đoán 3 câu** *(3-Question Diagnostic Micro-Quiz - Ask)* | **Đỗ Lê Việt Anh** (2A202602491) | Thiết kế bộ 3 câu hỏi trắc nghiệm 1 chạm, logic chẩn đoán lỗ hổng tri thức, thẻ `dcard`, đồ thị SVG minh hoạ và nút ghi đè.<br>➔ Trải nghiệm: [`prototype/index.html#context/theory/B`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype/index.html#context/theory/B) |
+| **C** | **AI gợi ý chủ động** *(Proactive Context Nudge Card - Act)* | **Nguyễn Thị Minh Khánh** (2A202602546) | Thiết kế bộ đếm thời gian 12s/bắt lỗi Checkpoint, thẻ `icard.nudge`, chip tín hiệu hành vi, mục giải trình *"Vì sao AI nghĩ vậy"* và nút tắt tự nhắc.<br>➔ Trải nghiệm: [`prototype/index.html#context/theory/C`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype/index.html#context/theory/C) |
+| **D** | **Hỏi người thật** *(Human Escalation & Auto Context Docket - Suggest)* | **Nguyễn Quang Huy** (2A202602421) | Thiết kế modal gom bối cảnh tự động, cơ chế chọn người nhận (TA Hà / Tuấn nhóm Lab), bảo vệ quyền riêng tư và panel theo dõi tiến trình phản hồi.<br>➔ Trải nghiệm: [`prototype/index.html#context/theory/D`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype/index.html#context/theory/D) |
 
 ---
 
@@ -88,3 +98,45 @@
 | **2. Expectation** | Thanh Pickbar ghi rõ: *"AI chỉ trả lời đúng phần bạn chọn, dựa trên slide này. AI không tự đoán bạn đang thiếu gì"*. | AI chào rõ ràng: *"Mình hỏi nhanh 3 câu (~1 phút) để tìm đúng phần kiến thức nền bạn đang thiếu nhé. Không chấm điểm, không lưu kết quả"*. | Thẻ ghi rõ mức độ tin cậy và nêu rõ: *"AI suy ra từ hành vi của bạn và học viên khác, chưa hỏi bạn câu nào, nên có thể đoán sai"*. | Modal ghi rõ: *"Trợ giảng AI đã soạn sẵn yêu cầu từ những gì bạn đang học. Người thật sẽ trả lời; AI không tự giải thích"* kèm thời gian dự kiến (*"Thường trả lời trong ~10 phút"*). |
 | **3. Evidence & Uncertainty** | Trích xuất nguồn chính xác: Nút `cite` (*"Xem lại lý thuyết: Slide X · Đoạn"*), câu nối liên kết (`bridge`) và ví dụ minh họa. | Hiển thị ma trận căn cứ: Thước đo **Độ chắc chắn (Cao / Trung bình / Thấp)**, dải huy hiệu mini `[✓]`, `[✗]`, `[?]` và mục mở rộng *"Xem chi tiết từng câu"*. | Thẻ tín hiệu thực tế: *"4 phút ở slide này"*, *"Lật slide 2 lần"*, *"6/10 học viên bí ở đây"*, kèm mục *"Vì sao AI nghĩ vậy?"*. | Hiển thị đầy đủ danh sách các thẻ bối cảnh (Context Chips: slide đang học, thời gian dừng, số lần thử sai câu hỏi) được gửi đi. |
 | **4. Control & Recovery** | Bấm nút `Huỷ`, bấm `×`, bấm Esc hoặc click ra ngoài để đóng tức thì (<1s). Có nút *"Sửa câu hỏi"* sau khi đã nhận giải thích. | Có nút *"Không đúng chỗ"* để tự chọn chủ đề muốn ôn ghi đè chẩn đoán; nút *"Làm lại 3 câu"*; nút `×` đóng panel bất cứ lúc nào. | Có nút *"Không phải chỗ này"* (chuyển sang chọn đoạn thật sự bí hoặc chọn topic thay thế); nút *"Tắt tự nhắc trong buổi này"* (có nút bật lại ở helpbar). | Người học có quyền tick/untick từng thẻ bối cảnh trước khi gửi để bảo vệ quyền riêng tư; nút *"Huỷ yêu cầu"*; nút *"Vẫn chưa hiểu"* để yêu cầu giải thích sâu hơn. |
+
+---
+
+## PHẦN 4: KẾT QUẢ KIỂM THỬ THỰC TẾ & QUYẾT ĐỊNH NEXT CHANGE (CHẶNG 4)
+*(Đồng bộ hóa với dữ liệu thực chứng từ [`prototype-feedback-note.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype-feedback-note.md) và [`group-feedback-synthesis.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/group-feedback-synthesis.md))*
+
+### 1. Tổng hợp phản hồi từ 4 phiên kiểm thử thực tế (Cross-Tester Highlights)
+Cả 4 thành viên trong nhóm Tung Tung Tung Sahur đã tiến hành 4 phiên kiểm thử Usability Testing độc lập với 4 học viên ngoài nhóm trên cùng một chủ đề (Context Window - Slide 12 Lý thuyết & Lab 4):
+
+| Chỉ số / Quan sát | Phiên 1 (T1 - Quân lead) | Phiên 2 (T2 - Việt Anh lead) | Phiên 3 (T3 - Khánh lead) | Phiên 4 (T4 - Huy lead) | Tổng quan toàn nhóm |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Người tham gia test** | Học viên Khóa 3 | **Thiều Quang Vinh** (MHV: **2A202602877**, Lớp AI Thực Chiến K4) | Lan (Học viên VLearn) | Học viên Khóa 3 (Nam) | 4 học viên thực tế ngoài nhóm |
+| **Thời gian & Địa điểm** | Sáng 05/10/2026 | **13:00 – 13:15 ngày 05/10/2026 tại Phòng 201** | Trực tuyến qua Meet | Chiều 05/10/2026 | Kiểm thử trực tiếp & trực tuyến |
+| **Trình tự trải nghiệm** | A ➔ B ➔ C ➔ D | **Option A ➔ Option C ➔ Option D ➔ Option C (retest)** | C ➔ A ➔ B ➔ D | A ➔ B ➔ D ➔ C | Trải nghiệm đủ 4 options |
+| **First Action** | Đọc slide 15s ➔ Bấm nút trợ giúp | **Bấm đáp án ĐÚNG trước để xem output ➔ Bấm làm lại, chọn SAI để xem AI giúp gì** | Đọc bài ➔ Bị thẻ Opt C tự trượt ra làm phân tâm | Đọc câu hỏi kiểm tra trước để nhẩm tính | 50% tester (T2, T4) kiểm thử mỏ neo Quiz trước |
+| **Breakdown chính** | Lúng túng chọn khối ở Opt A; Opt B câu trắc nghiệm dài | **Khi chọn 1 đoạn và được AI giải thích xong, hệ thống không cho chọn tiếp các đoạn khác** | Cảm thấy bị làm phiền vì Opt C tự hiện quá sớm; Opt D chờ lâu | Ngại lộ thông tin nhạy cảm ở Opt D; Opt B đồ thị SVG nhiều chữ | Rào cản gián đoạn (Opt C) và mất quyền kiểm soát (Opt C breakdown) |
+| **Cách lấy lại control** | Nút *"Làm lại"*, nút đóng `×` | **Bấm nút *"Không đúng chỗ"* (`c-reject`)** | Bấm *"Tắt tự nhắc trong buổi này"* | Untick bối cảnh ở Opt D, bấm *"Không phải chỗ này"* | 100% tester chủ động dùng nút phục hồi quyền kiểm soát |
+| **Option được chọn** | **Option A** | **Option C** | **Option A** | **Option B** | **Opt A (2/4), Opt C (1/4), Opt B (1/4), Opt D (0/4)** |
+| **Trade-off chấp nhận** | Tốc độ tức thì (<5s); chịu tự chọn đoạn | **Chọn đúng chỗ kẹt để AI giải thích; không đánh đổi gì cả** | Giao diện yên tĩnh; chịu tự bấm | Đúng bệnh hiểu sai; chịu mất thêm 1 phút | Ưu tiên tốc độ, giải thích tại chỗ, không đứt mạch học |
+
+### 2. Điểm nhấn phiên kiểm thử của Đỗ Lê Việt Anh (Phiên 2 — Tester Thiều Quang Vinh)
+- **Hành vi "Reverse-testing" độc đáo:** Khác với suy đoán ban đầu của nhóm, bạn Vinh không đọc tuần tự slide mà cuộn thẳng xuống Quiz:
+  1. *Lần 1:* Bấm đáp án **ĐÚNG** (*"Bản tóm tắt bị cắt giữa chừng"*) trong 14s để xem output phản hồi khi làm đúng.
+  2. *Lần 2:* Bấm làm lại, cố tình chọn đáp án **SAI** (*"Không sao, 8.000 token chỉ tính cho input"*) để quan sát vị trí và năng lực cứu trợ của AI.
+- **Phát hiện Breakdown nghiêm trọng ở Option C:** Khi AI tự động ghim thẻ gợi ý vào đoạn `budget` và người học đọc xong giải thích, giao diện **khóa cứng không cho phép bấm chọn sang các đoạn/khái niệm khác** (`token`, `memory`) dù người học vẫn còn điểm băn khoăn. Tester đã phải bấm nút *"Không đúng chỗ"* (`c-reject`) để kiểm tra cơ chế thoát hiểm.
+- **Rào cản tâm lý của Option D:** Tester mở modal nhờ người thật 2 lần nhưng đều hủy ngay trong vài giây (`d-cancel-draft`), chứng minh người học rất ngại làm phiền Mentor cho các câu hỏi lý thuyết ngắn.
+- **Lý do chọn Option C:** Tester đánh giá Option C là phương án **trực quan nhất**, khoanh vùng trực tiếp điểm nghẽn mà không cần người học phải tự mò mẫm hay gõ prompt, và cảm thấy *"không có đánh đổi gì cả"*.
+
+### 3. Quyết định Next Change thống nhất của toàn nhóm (Group Iteration Decision)
+Dựa trên bằng chứng thực nghiệm từ cả 4 phiên kiểm thử (đặc biệt là sự tương phản giữa T1/T3 chọn Option A và T2 chọn Option C), nhóm Tung Tung Tung Sahur thống nhất phương án cải tiến tích hợp cho vòng lặp tiếp theo:
+1. **Lấy Option A (Inline Inspector) làm khung giao diện cốt lõi:** Đảm bảo không gian học tập yên tĩnh, phản hồi siêu nhanh (<5s) ngay tại chỗ và không gây gián đoạn mạch tập trung của người học.
+2. **Tích hợp Trigger thông minh từ Option C (Checkpoint-Driven Nudge):** 
+   - *Loại bỏ hoàn toàn* bộ đếm thời gian 12 giây tự động nhảy ra của Opt C (vốn gây khó chịu cho T1 và T3).
+   - *Giữ lại cơ chế cứu hộ vàng:* Chỉ kích hoạt gợi ý hỗ trợ khoanh vùng khi người học **trả lời sai câu hỏi nhanh (Quiz/Checkpoint)** như hành vi thực tế của T2 và T4.
+3. **Mở khóa tương tác đa khối (Khắc phục triệt để Breakdown của Opt C):** Sau khi nhận giải thích ở một đoạn, người học có thể tự do bấm chọn tiếp các khối khái niệm khác trên slide mà không bị khóa cứng giao diện.
+4. **Tinh gọn cơ chế chẩn đoán từ Option B (Micro-Diagnostic 1 câu):** Rút gọn bộ 3 câu hỏi trắc nghiệm của Option B xuống đúng 1 câu hỏi tương tác nhanh (~10s) nhằm xác định chính xác người học hổng ở khái niệm gốc nào trước khi xuất thẻ giải thích.
+5. **Định vị Option D làm phao cứu sinh cuối cùng (Conditional Human Escalation):** Option D chỉ được hệ thống chủ động đề xuất khi người học làm sai Checkpoint liên tiếp từ 2 lần trở lên sau khi đã đọc giải thích của AI.
+
+### 4. Những điều Still Unproven (Vẫn cần tiếp tục kiểm chứng)
+1. **Hành vi trên bài Lab thực hành code:** Cả 4 phiên kiểm thử mới chỉ dừng lại ở bài Slide lý thuyết ngắn. Cần kiểm chứng xem giao diện chạm chọn khối in-line có đáp ứng tốt khi gặp các đoạn code Python dài, lỗi traceback phức tạp trong bài Lab Task 2 (`trim_history`) hay không.
+2. **Độ duy trì kiến thức (Retention):** Lời giải thích tức thì của AI giúp người học vượt qua câu hỏi nhanh dễ dàng, nhưng liệu người học có thực sự hiểu sâu bản chất và nhớ lâu hay sẽ nhanh chóng quên kiến thức?
+3. **Hành vi học lúc đêm muộn:** Kiểm chứng xem khi học một mình sát deadline (không có người quan sát bên cạnh), người học có kiên nhẫn dùng công cụ in-context này hay vẫn giữ phản xạ copy/paste sang ChatGPT bên ngoài.

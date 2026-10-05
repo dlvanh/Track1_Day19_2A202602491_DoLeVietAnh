@@ -1,12 +1,18 @@
 # BÀI NỘP TRACK 1 — DAY 19: PROTOTYPING & USER TESTING
-## DỰ ÁN UNIPILOT — HỆ ĐIỀU HÀNH TRỢ LÝ TUYỂN SINH THÔNG MINH ĐA TRƯỜNG (P-127)
+## DỰ ÁN VLEARN AI TUTOR: DIAGNOSTIC REFRESHER
 
 > **Khóa học:** AI20K Bootcamp — Cohort 4  
 > **Học phần:** Track 1: AI Product Labs (AI Product Design & Prototyping)  
-> **Học viên:** **Đỗ Lê Việt Anh**  
+> **Học viên thực hiện:** **Đỗ Lê Việt Anh**  
 > **Mã số sinh viên (MSSV):** **2A202602491**  
-> **Nhóm thực hiện:** **Nhóm P-127 (UniPilot Team)**  
-> **Đơn vị thí điểm:** Trường Đại học Công nghệ – ĐHQGHN (UET - VNU)  
+> **Phương án phụ trách chính:** **Option B** (Chẩn đoán 3 câu — Diagnostic Micro-Check & Knowledge Gap Triage)  
+> **Nhóm thực hiện:** **Tung Tung Tung Sahur**  
+> **Thành viên nhóm:**  
+> - **Lại Bá Quân** (2A202602495) — Lead Option A: *Chỉ vào chỗ kẹt (Inline Term/Block Inspector)*  
+> - **Đỗ Lê Việt Anh** (2A202602491) — Lead Option B: *Chẩn đoán 3 câu (3-Question Diagnostic Micro-Quiz)*  
+> - **Nguyễn Thị Minh Khánh** (2A202602546) — Lead Option C: *AI gợi ý chủ động (Proactive Context Nudge Card)*  
+> - **Nguyễn Quang Huy** (2A202602421) — Lead Option D: *Hỏi người thật (Human Escalation & Auto Context Docket)*  
+> **Đơn vị thí điểm:** Nền tảng học tập trực tuyến VLearn  
 > **Ngày hoàn thành bài nộp:** 05/10/2026
 
 ---
@@ -15,11 +21,13 @@
 
 ```
 Track1_Day19_2A202602491_DoLeVietAnh/
-├── three-option-design-sheet.md       # Bảng phân tích 3 phương án thiết kế A/B/C & link Figma board
-├── prototype-link.md                  # Danh sách liên kết nguyên mẫu tương tác A/B/C chung của nhóm
-├── prototype-feedback-note.md         # Biên bản chi tiết phiên kiểm thử thực tế do chính Việt Anh điều phối
-├── group-feedback-synthesis.md        # Báo cáo tổng hợp phản hồi toàn nhóm & ma trận ưu tiên P0/P1/P2
-└── ai-support-log.md                  # Nhật ký minh bạch sử dụng AI & phản biện của con người
+├── three-option-design-sheet.md       # Bảng phân tích 4 phương án thiết kế A/B/C/D, Human-AI matrix & Next change
+├── prototype-link.md                  # Danh sách liên kết nguyên mẫu tương tác A/B/C/D chung của nhóm
+├── prototype-feedback-note.md         # Biên bản chi tiết phiên kiểm thử thực tế do chính Việt Anh điều phối (Tester Thiều Quang Vinh)
+├── group-feedback-synthesis.md        # Báo cáo tổng hợp phản hồi toàn nhóm & quyết định Next Change thống nhất
+├── ai-support-log.md                  # Nhật ký minh bạch sử dụng AI & phản biện của con người
+└── prototype/
+    └── index.html                     # Mã nguồn nguyên mẫu web tương tác độc lập (Vanilla HTML/CSS/JS)
 ```
 
 ---
@@ -27,31 +35,36 @@ Track1_Day19_2A202602491_DoLeVietAnh/
 ## 📌 Tóm Tắt Nội Dung Từng Tài Liệu
 
 ### 1. [three-option-design-sheet.md](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/three-option-design-sheet.md)
-- Phân tích chi tiết 3 hướng tiếp cận thiết kế giải quyết bài toán tư vấn tuyển sinh:
-  - **Phương án A:** *Conversational Floating Widget* (Chatbot góc màn hình truyền thống).
-  - **Phương án B:** *"Calm Counselor's Desk"* (Bàn tư vấn tĩnh lặng với Thước đo vị thế `AdmissionStanding` & Trợ lý trích dẫn Footnote pháp lý) — **Phương án được chọn làm lõi**.
-  - **Phương án C:** *Diagnostic Wizard* (Bộ câu hỏi khảo sát 4 bước trắc nghiệm).
-- Ma trận so sánh 5 tiêu chí có trọng số (Khả năng giải tỏa lo âu, Độ tin cậy tri thức, Tốc độ, Hiệu quả giảm tải cán bộ, Tính khả thi kỹ thuật).
-- Đính kèm liên kết Figma Design Sprint Board chung của nhóm.
+- Phân tích chi tiết 4 hướng tiếp cận thiết kế giải quyết điểm nghẽn kiến thức trên nền tảng VLearn:
+  - **Phương án A:** *Chỉ vào chỗ kẹt* (Inline Term/Block Inspector - Don't Act) — Quân lead.
+  - **Phương án B:** *Chẩn đoán 3 câu* (3-Question Diagnostic Micro-Quiz - Ask) — **Việt Anh lead**.
+  - **Phương án C:** *AI gợi ý chủ động* (Proactive Context Nudge Card - Act) — Minh Khánh lead.
+  - **Phương án D:** *Hỏi người thật* (Human Escalation & Auto Context Docket - Suggest) — Quang Huy lead.
+- 70% Shared Core: 3 Content Fixtures (`context`, `react`, `gd`) áp dụng trên cả Slide lý thuyết và bài thực hành Lab.
+- Bảng quyết định Human–AI (Role & Agency, Expectation, Evidence & Uncertainty, Control & Recovery).
+- Tổng hợp kết quả User Testing từ 4 phiên và quyết định Next Change tích hợp của nhóm.
 
 ### 2. [prototype-link.md](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype-link.md)
-- Tổng hợp đầy đủ đường dẫn trải nghiệm trực tiếp 3 nguyên mẫu (Cloud sandbox, Vercel preview, Figma click-through).
-- Hướng dẫn truy cập phân hệ Thí sinh (`/candidate`) và phân hệ Cán bộ tư vấn (`/consultant`).
-- Cung cấp tài khoản thử nghiệm và hướng dẫn khởi chạy nguyên mẫu trên máy cục bộ (`npm run dev`).
+- Tổng hợp toàn bộ liên kết trải nghiệm trực tiếp nguyên mẫu web [`prototype/index.html`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype/index.html).
+- Hướng dẫn truy cập nhanh cả 4 options trên 3 kịch bản:
+  - Chủ đề 1: Context Window (Slide 12 & Lab 4).
+  - Chủ đề 2: ReAct Agent (Slide 9 & Lab 3).
+  - Chủ đề 3: Gradient Descent (Slide 7 & Lab 9).
+- Bàn điều khiển Facilitator Log (`#/log`) ghi nhận telemetry thời gian thực dạng CSV.
 
 ### 3. [prototype-feedback-note.md](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype-feedback-note.md)
-- Biên bản ghi chép phiên kiểm thử định tính 1-1 có hướng dẫn (Moderated Usability Testing) do chính **Đỗ Lê Việt Anh** điều phối.
-- Người tham gia: Bạn Lê Hoàng Nam (18 tuổi, Học sinh lớp 12 chuyên Tin - THPT Chuyên KHTN, nguyện vọng vào ngành CNTT CN1 của UET).
-- Ghi nhận chi tiết diễn biến từng phút của 3 nhiệm vụ kiểm thử kèm các câu nói trực tiếp (quotes) giàu cảm xúc.
-- Đo lường chỉ số định lượng: Completion Rate 100%, SUS Score **85.0/100 (Hạng A)**, SEQ từng task.
-- Chiêm nghiệm cá nhân của người điều phối và 3 hành động kỹ thuật tinh chỉnh frontend tức thì.
+- Biên bản ghi chép phiên kiểm thử định tính 1-1 do chính **Đỗ Lê Việt Anh** trực tiếp điều phối.
+- Người tham gia: Bạn **Thiều Quang Vinh** (MHV: **2A202602877**, Học viên AI Thực Chiến khóa 4).
+- Thời gian & địa điểm: **13:00 – 13:15 ngày 05/10/2026 trực tiếp tại phòng học 201**.
+- Trình tự trải nghiệm: Option A ➔ Option C ➔ Option D ➔ Option C (retest).
+- Nhật ký CSV 37 dòng trích xuất từ Facilitator Log ghi nhận chính xác từng giây hành vi làm đúng trước, cố tình làm sai sau để đánh giá AI.
+- Phân tích 4 lớp dữ liệu (Observed, Interpreted, Decided - Next Change, Still Unproven).
 
 ### 4. [group-feedback-synthesis.md](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/group-feedback-synthesis.md)
-- Báo cáo tổng hợp dữ liệu từ 4 phiên kiểm thử của nhóm P-127 trên 4 nhóm chân dung người dùng (Thí sinh chuyên, Thí sinh tỉnh, Phụ huynh học sinh, Cán bộ tuyển sinh).
-- 4 cụm phát hiện cốt lõi: Giá trị của Visual Anchor (Thước đo điểm), Tính pháp lý của Footnotes, Nỗi e ngại khi gặp nút Handoff, và Giá trị tiết kiệm thời gian của Thẻ tóm tắt hồ sơ đối với cán bộ.
-- Ma trận ưu tiên hành động (Impact vs. Effort): Phân định rõ ràng các hạng mục P0, P1, P2 trước thềm Demo Day.
-- Quyết định phê duyệt 100% kiến trúc Phương án B của toàn đội.
+- Báo cáo tổng hợp đối chiếu chéo (Cross-Tester Synthesis) từ 4 phiên kiểm thử độc lập của 4 thành viên nhóm Tung Tung Tung Sahur.
+- Ma trận phân tích First Action, Breakdown chính, Cách lấy lại control, Option được chọn và Trade-off cốt lõi.
+- Quyết định Next Change thống nhất: Chọn Option A làm UI core, tích hợp Trigger khi sai Checkpoint từ Option C, tinh gọn chẩn đoán 1 câu từ Option B, sửa lỗi khóa cứng của Option C, và leo thang sang Option D khi sai từ 2 lần trở lên.
 
 ### 5. [ai-support-log.md](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/ai-support-log.md)
-- Bảng nhật ký minh bạch theo quy chuẩn môn học với 4 cột: Tác vụ, Đóng góp của AI, Giới hạn/Sai lệch của AI, Can thiệp thực tế của con người.
-- Phản ánh rõ ràng vai trò hỗ trợ của AI (tăng tốc dàn khung tài liệu) và giá trị không thể thay thế của con người (thấu cảm người dùng, nắm bắt tâm lý lo âu kỳ thi, am hiểu quy chế tuyển sinh Việt Nam).
+- Bảng nhật ký minh bạch theo quy chuẩn môn học phản ánh sự hợp tác giữa học viên và trợ lý AI trong suốt quy trình Day 19.
+- Đánh giá thẳng thắn các sai lệch/hạn chế của AI và sự can thiệp thực tế của con người trong quá trình prototyping và user testing.
