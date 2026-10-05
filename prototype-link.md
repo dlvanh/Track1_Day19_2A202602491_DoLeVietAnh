@@ -1,9 +1,18 @@
 # PROTOTYPE LINKS & TEST CONTEXT (NHÓM TUNG TUNG TUNG SAHUR)
+## DỰ ÁN VLEARN AI TUTOR: DIAGNOSTIC REFRESHER
 
-> **Tài liệu truy cập Web Prototype chính thức của nhóm**: Phiên bản hoàn chỉnh tích hợp 4 cơ chế Human–AI, hỗ trợ đầy đủ chế độ Lý thuyết (Slide) và Thực hành (Lab) trên 3 chủ đề kiến thức thực tế, kèm hệ thống Facilitator Logger tự động đo lường thời gian thực.
->
-> **Nhóm thực hiện:** Tung Tung Tung Sahur  
-> **Thành viên:** Lại Bá Quân (Lead Opt A), Đỗ Lê Việt Anh (Lead Opt B), Nguyễn Thị Minh Khánh (Lead Opt C), Nguyễn Quang Huy (Lead Opt D)
+> **Khóa học:** AI20K Bootcamp — Cohort 4  
+> **Học phần:** Track 1: AI Product Labs (Day 19: Prototyping & User Testing)  
+> **Học viên thực hiện:** **Đỗ Lê Việt Anh** (MSSV: **2A202602491**) — Phụ trách chính: **Option B** (Chẩn đoán 3 câu)  
+> **Nhóm thực hiện:** **Tung Tung Tung Sahur**  
+> **Thành viên nhóm:**  
+> - **Lại Bá Quân** (2A202602495) — Lead Option A: *Chỉ vào chỗ kẹt (Inline Term/Block Inspector)*  
+> - **Đỗ Lê Việt Anh** (2A202602491) — Lead Option B: *Chẩn đoán 3 câu (3-Question Diagnostic Micro-Quiz)*  
+> - **Nguyễn Thị Minh Khánh** (2A202602546) — Lead Option C: *AI gợi ý chủ động (Proactive Context Nudge Card)*  
+> - **Nguyễn Quang Huy** (2A202602421) — Lead Option D: *Hỏi người thật (Human Escalation & Auto Context Docket)*  
+> **Case Study:** Hỗ trợ người học vượt qua điểm nghẽn kiến thức trên nền tảng VLearn  
+> **Nguyên mẫu tương tác hoàn chỉnh:** [`prototype/index.html`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype/index.html)  
+> **Hồ sơ liên quan:** [`three-option-design-sheet.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/three-option-design-sheet.md) | [`prototype-feedback-note.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype-feedback-note.md) | [`group-feedback-synthesis.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/group-feedback-synthesis.md)
 
 ---
 

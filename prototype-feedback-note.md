@@ -1,8 +1,15 @@
 # PROTOTYPE FEEDBACK NOTE (CÁ NHÂN)
+## DỰ ÁN VLEARN AI TUTOR: DIAGNOSTIC REFRESHER
 
+> **Khóa học:** AI20K Bootcamp — Cohort 4  
+> **Học phần:** Track 1: AI Product Labs (Day 19: Prototyping & User Testing)  
 > **Người thực hiện facilitate & ghi chép:** **Đỗ Lê Việt Anh** (MSSV: **2A202602491**)  
-> **Nhóm thực hiện:** Tung Tung Tung Sahur  
 > **Phương án phụ trách chính:** **Option B** (Chẩn đoán 3 câu — Diagnostic Micro-Check & Knowledge Gap Triage)  
+> **Nhóm thực hiện:** **Tung Tung Tung Sahur**  
+> **Thành viên nhóm:** Lại Bá Quân (Lead Opt A), Đỗ Lê Việt Anh (Lead Opt B), Nguyễn Thị Minh Khánh (Lead Opt C), Nguyễn Quang Huy (Lead Opt D)  
+> **Case Study:** Hỗ trợ người học vượt qua điểm nghẽn kiến thức trên nền tảng VLearn  
+> **Nguyên mẫu kiểm thử:** [`prototype/index.html`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype/index.html)  
+> **Hồ sơ liên quan:** [`three-option-design-sheet.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/three-option-design-sheet.md) | [`group-feedback-synthesis.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/group-feedback-synthesis.md) | [`prototype-link.md`](file:///d:/AI20K/Track1_Day19_2A202602491_DoLeVietAnh/prototype-link.md)  
 > **Quy định**: Phiên này do chính bạn trực tiếp điều phối độc lập với 1 tester ngoài nhóm. Tester được trải nghiệm ĐỦ CẢ 4 OPTIONS (A, B, C, D) trên cùng một chủ đề bài học và cùng một Outcome Task.
 
 ---
